@@ -1,8 +1,4 @@
 import React, { useState } from 'react';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemText from '@mui/material/ListItemText';
-import ListItemSecondaryAction from '@mui/material/ListItemSecondaryAction';
 import Button from '@mui/material/Button';
 import { Grid, Paper, Typography } from '@mui/material';
 
@@ -34,7 +30,6 @@ const ReadingList: React.FC<ReadingListProps> = ({ readingList, onRemove }) => {
       <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
         <Paper
           elevation={3}
-          onClick={() => onRemove(book)}
           className="book-list-item"
           onMouseEnter={() => handleMouseEnter(book)}
           onMouseLeave={handleMouseLeave}

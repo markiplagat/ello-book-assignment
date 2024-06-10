@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# Ello Book Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a part of the Ello web viewer product for teachers to assign books to students. The teacher-facing UI allows teachers to search for books, add them to a reading list, and manage the reading list.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Search for books by title
+- Display a list of search results with book title, author, and cover photo
+- Add books to the reading list
+- Display the reading list with an option to remove books
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React
+- Apollo Client for GraphQL
+- Material-UI for UI components
+- TypeScript for type safety
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project Structure
 
-### `npm test`
+- `ello-assignment`: Contains the React frontend code
+- `ello-assignment/backend`: Contains the backend GraphQL server
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Setup Instructions
 
-### `npm run build`
+### Backend Setup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Navigate to the backend directory:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    ```bash
+    cd ello-assignment/backend
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Install the dependencies:
 
-### `npm run eject`
+    ```bash
+    npm install
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Start the backend server:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    ```bash
+    npm start
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    The server will be running at `http://localhost:4000/`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Frontend Setup
 
-## Learn More
+1. Navigate to the frontend directory:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    ```bash
+    cd ello-assignment
+    ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. Install the dependencies:
 
-### Code Splitting
+    ```bash
+    npm install
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. Start the frontend development server:
 
-### Analyzing the Bundle Size
+    ```bash
+    npm start
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    The app will be running at `http://localhost:3000/`.
 
-### Making a Progressive Web App
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. Use the search bar to search for books by title.
+2. The search results will be displayed in a grid with the book cover, title, and author.
+3. Click the "Add" button to add a book to the reading list.
+4. The reading list will display all added books with an option to remove them.
 
-### Advanced Configuration
+## Styling
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+The application uses the "Mulish" Google font and the following colors:
 
-### Deployment
+### Primary Colors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Turquoise: `#5ACCCC`
+- White: `#FFFFFF`
+- Steel Blue: `#335C6E`
+- Yellow: `#FABD33`
 
-### `npm run build` fails to minify
+### Secondary Colors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Orange Red: `#F76434`
+- Teal: `#4AA088`
+- Yellow Dark: `#FAAD00`
+- Turquoise Dark 1: `#53C2C2`
+- Turquoise Dark 2: `#28B8B8`
